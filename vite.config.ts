@@ -14,6 +14,7 @@ const exercises = readdirSync(exercisesDir, { withFileTypes: true })
   }, {});
 
 export default defineConfig({
+  base: '/THREE_VITE/',
   build: {
     chunkSizeWarningLimit: 1000, // Increase limit to 1MB
     rollupOptions: {
